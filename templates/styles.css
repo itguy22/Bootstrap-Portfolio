@@ -1,0 +1,8 @@
+        /* Custom CSS for the profile image */
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .space-below {
+            margin-bottom: 20px; }

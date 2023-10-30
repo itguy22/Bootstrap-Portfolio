@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan's Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="templates/styles.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        /* Custom CSS for the profile image */
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .space-below {
+            margin-bottom: 20px;
+        }
+    </style>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">Ryan's Portfolio</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact   </a></li>
+          </ul>
+        </header>
+      </div>
+      <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold text-body-emphasis">My Works</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Reading list web app created with Python and the Flask web framework. Stores data in a PostgreSQL database.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">See More</button>
+          </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+          <div class="container px-5">
+            <img src="images/readinglist_1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div style="margin-bottom: 20px;"> <!-- Adds space below this div -->
+        <!-- Your content here -->
+    </div>    
+    <div class="container my-5">
+        <div class="row">
+            <!-- Image of Yourself -->
+            <div class="col-md-4 d-flex justify-content-center"> <!-- Added flexbox for center alignment -->
+                <img src="images/me2023.jpg" class="img-fluid rounded-circle shadow profile-img" alt="Ryan"> <!-- Added profile-img class -->
+            </div>
+            <!-- Description About Yourself -->
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>
+                  Hello! My name is Ryan, I have a passion for technology and coding. Over the past years, I've worked on various projects honing my skills in front-end and back-end development. In my free time, I love to explore new frameworks and expand my knowledge in the ever-evolving field of web development. Feel free to browse through my projects and get in touch if you'd like to collaborate!
+                </p>
+            </div>
+        </div>
+</body>
+</html>
