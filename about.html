@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan's Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="templates/styles.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        /* Custom CSS for the profile image */
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .space-below {
+            margin-bottom: 20px;
+        }
+    </style>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">Ryan's Portfolio</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link active" aria-current="page">About Me</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </header>
+      </div>
+      <div style="margin-bottom: 20px;"> <!-- Adds space below this div -->
+        <!-- Your content here -->
+    </div>    
+    <div class="container my-5">
+        <div class="row">
+            <!-- Image of Yourself -->
+            <div class="col-md-4 d-flex justify-content-center"> <!-- Added flexbox for center alignment -->
+                <img src="images/me2023.jpg" class="img-fluid rounded-circle shadow profile-img" alt="Ryan"> <!-- Added profile-img class -->
+            </div>
+            <!-- Description About Yourself -->
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>
+                  Hello! My name is Ryan, I have a passion for technology and coding. Over the years, I have worked on various projects independently and sometimes collaboratively. My speciality is Python coding and related frameworks, I also have a wide range of experience with many different languages and technologies. Please explore further to see my portfolio of projects I have created or contributed to.  
+                </p>
+                <h3>Certifications</h3>
+                <div class="row">
+                    <!-- CompTIA A+ Certification -->
+                    <div class="col-md-6">
+                        <img src="images/CompTIA_A.png" class="img-fluid rounded shadow mb-2" alt="CompTIA A+ Certification" style="max-height: 100px;">
+                        <p><strong>CompTIA A+</strong><br> Validated foundational IT skills across a variety of devices and operating systems.</p>
+                    </div>
+                    <!-- CompTIA Net+ Certification -->
+                    <div class="col-md-6">
+                        <img src="images/CompTIA_NET.png" class="img-fluid rounded shadow mb-2" alt="CompTIA Net+ Certification" style="max-height: 100px;">
+                        <p><strong>CompTIA Net+</strong><br> Verified skills to design, configure, manage, and troubleshoot any wired and wireless networks.</p>
+                    </div>
+            </div>
+        </div>
