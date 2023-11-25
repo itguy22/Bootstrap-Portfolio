@@ -6,10 +6,24 @@
     <title>Ryan's Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="templates/styles.css" rel="stylesheet">
+
 </head>
 <body>
     <style>
         /* Custom CSS for the profile image */
+        .carousel-item {
+          height:32rem;
+          background:#777;
+          color:white;
+          position: relative;
+        }
+        .carousel-container {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding-bottom: 50px;
+        }
         .profile-img {
             width: 200px;
             height: 200px;
@@ -19,6 +33,8 @@
             margin-bottom: 20px;
         }
     </style>
+    
+
     <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -34,20 +50,52 @@
           </ul>
         </header>
       </div>
-      <div class="px-4 pt-5 my-5 text-center border-bottom">
-        <h1 class="display-4 fw-bold text-body-emphasis">My Works</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Reading list web app created with Python and the Flask web framework. Stores data in a PostgreSQL database.</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-            <a href="projects.html" class="btn btn-primary btn-lg px-4 me-sm-3">See More</a>
-          </div>
+
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="overflow-hidden" style="max-height: 30vh;">
-          <div class="container px-5">
-            <img src="images/readinglist_1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-          </div>
+    
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/readinglist_1.jpg" class="d-block w-100" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Reading List App</h5>
+                <p>Sample description of project.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/bot_test.png" class="d-block w-100" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Python Discord Bot</h5>
+                <p>Sample description of project.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+            <img src="images/asset-tracker.png" class="d-block w-100" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Asset Tracker Web App</h5>
+              <p>Sample description of project.</p>
+            </div>
+            </div>
         </div>
-      </div>
+    
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
       <div style="margin-bottom: 20px;"> <!-- Adds space below this div -->
         <!-- Your content here -->
     </div>    
@@ -77,5 +125,7 @@
                     </div>
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
